@@ -1,1 +1,0 @@
-# go-complete-dev-guide
