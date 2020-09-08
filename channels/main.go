@@ -19,8 +19,8 @@ func main() {
 		go checkLink(link, c)
 	}
 
-	for { //infinite loop :O
-		go checkLink(<-c, c)
+	for l := range c { //loop using channel as range
+		go checkLink(l, c)
 	}
 }
 
